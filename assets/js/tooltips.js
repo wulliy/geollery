@@ -8,7 +8,7 @@ document.onmousemove = (e) => {
 		tooltip.style.display = ""
 		tooltip.style.left = (e.clientX + 5) + "px"
 		tooltip.style.top = (e.clientY - 18) + "px"
-		tooltip.innerText = ":"+e.target.src.split("/")[8].slice(0, -4)+":"
+		tooltip.innerText = ":"+e.target.src.split("/")[6].slice(0, -4)+":"
 	} else {
 		tooltip.style.display = "none"
 	}
