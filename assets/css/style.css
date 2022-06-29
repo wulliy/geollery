@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+}
+
+*::selection {
+	background: #d8d8d8;
+}
+
+body {
+	background: #e5e5e5;
+	font-family: monospace;
+	
+	padding: 0 1em;
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.box {
+	background: #f8f8f8;
+	padding: 1em;
+
+	/* credit to mat for the original idea */
+	box-shadow: 2px 2px black;
+	border: 1px solid black;
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+}
+
+.image-grid img {
+	width: 108px;
+	height: 108px;
+}
+
+.tooltip {
+	position: fixed;
+	border: 1px solid black;
+	background: black;
+	color: white;
+	padding: 0.1em;
+}
