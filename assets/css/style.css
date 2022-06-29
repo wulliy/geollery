@@ -36,6 +36,7 @@ body {
 .image-grid img {
 	width: 108px;
 	height: 108px;
+	user-select: none;
 }
 
 .tooltip {
@@ -44,4 +45,19 @@ body {
 	background: black;
 	color: white;
 	padding: 0.1em;
+}
+
+@media (prefers-color-scheme: dark) {
+	::selection {
+		background: #333;
+	}
+
+	body {
+		background: #222;
+	}
+
+	.box {
+		background: #111;
+		color: white;
+	}
 }
